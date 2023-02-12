@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+html, body{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    background-image: linear-gradient(#bcd2e490 2px, transparent 0);
+    background-size: 100% 7vmin;
+}
+
+.be-careful {
+    position: absolute;
+    left: 5vmin;
+    top: 0;
+    font-size: 3vmin;
+    color: #2f2f2f;
+    opacity : 0.5;
+    height: 7vmin;
+    line-height: 7vmin;
+    font-family: 'Shadows Into Light',cursive;
+
+}
+
+.select{
+    position: absolute;
+    bottom: 5vmin;
+    display: flex;
+    gap: 4vmin;
+}
+.select >button{
+    font-size: 3.5vmin;
+    cursor: pointer; 
+    border: none;
+    border-bottom : 0.6vmin solid #2f2f2f;
+    font-weight: bold;
+    background: none;
+    position:relative;
+    font-family: 'Shadows Into Light',cursive;
+}
+
+.select > button::after{
+
+    content:"";
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border-style: double;
+    border : none;
+    border-right : 0.6vmin solid #2f2f2f;
+    right: 0;
+    bottom: 0;
+    transform: rotate(45deg) translate(20%, -20%);
+}
+
+.container{
+    position : relative;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+.container > *{
+    position: absolute;
+    border: 1vmin dashed #2f2f2f;
+    padding: 0.7vmin;
+    font-weight: 5.5vmin;
+    border-radius: 2vmin;
+    background-color: #fff;
+    font-family: 'Shadows Into Light',cursive;
+    will-change: transform;
+}
+
+.container > p {
+    white-space: pre;
+    padding: 1.2vmin 2vmin;
+    min-width: 65vmin;
+    text-align: center;
+}
+.container >img{
+    width: 600px;
+    height:400px;
+    max-width: 50vmin;
+    max-height: 33.33vmin;
+}
+.container > input{
+   width: 65vmin;
+   height: 15vmin;
+}
+
+*{
+    cursor : url('Images/cursor.png'),auto;
+}
+
+
